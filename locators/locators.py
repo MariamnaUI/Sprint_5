@@ -3,12 +3,12 @@ from selenium.webdriver.common.by import By
 class MainPageLocators:
     CONSTRUCTOR_BUTTON = (By.XPATH, '//p[contains(text(),"Конструктор")]') #Кнопка "Конструктор" на главной странице
     PERSONAL_ACCOUNT_BUTTON = (By.XPATH, '//p[contains(text(),"Личный Кабинет")]') # Кнопка "Личный Кабинет" на главной странице
-    LOGO_BUTTON = (By.XPATH, ".//div[@class='AppHeader_header__logo__2D0X2']") # "Логотип" на главной странице
+    LOGO_BUTTON = (By.XPATH, './/div[@class=\'AppHeader_header__logo__2D0X2\']') # "Логотип" на главной странице
     ORDER_BUTTON = (By.XPATH, '//button[contains(text(),"Оформить заказ")]') # Кнопка "Оформить заказ" на главной странице
 
 class RegisterLocators:
-    NAME_INPUT = (By.XPATH, '//fieldset[1]//div[1]//div[1]//input[1]') # Поле ввода "Имя"
-    EMAIL_INPUT = (By.XPATH, '//fieldset[2]//div[1]//div[1]//input[1]') # "E-mail"
+    NAME_INPUT = (By.XPATH, '//input[@name="name"]') # Поле ввода "Имя"
+    EMAIL_INPUT = (By.XPATH, '//label[text()="Email"]/following-sibling::input') # "E-mail"
     PASSWORD_INPUT = (By.XPATH, '//input[@name="Пароль"]') # Поле ввода "Пароль"
     REGISTER_BUTTON = (By.XPATH, '//button[contains(text(),"Зарегистрироваться")]') # Кнопка "Зарегистрироваться"
     ERROR_PASSWORD_MESSAGE = (By.XPATH, '//p[@class="input__error text_type_main-default"]') # Ошибка при невалидном пароле
