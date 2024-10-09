@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 class MainPageLocators:
     CONSTRUCTOR_BUTTON = (By.XPATH, '//p[contains(text(),"Конструктор")]') #Кнопка "Конструктор" на главной странице
     PERSONAL_ACCOUNT_BUTTON = (By.XPATH, '//p[contains(text(),"Личный Кабинет")]') # Кнопка "Личный Кабинет" на главной странице
-    LOGO_BUTTON = (By.XPATH, ".//div[@class='AppHeader_header__logo__2D0X2']") # "Логотип" на главной странице    //a[@class="active"]//*[name()="svg"]   //a[@class="active"]
+    LOGO_BUTTON = (By.XPATH, ".//div[@class='AppHeader_header__logo__2D0X2']") # "Логотип" на главной странице
     ORDER_BUTTON = (By.XPATH, '//button[contains(text(),"Оформить заказ")]') # Кнопка "Оформить заказ" на главной странице
 
 class RegisterLocators:
@@ -32,4 +32,3 @@ class  ConstructorPage:
     BUNS_BURGER_INGREDIENTS_SECTION = (By.XPATH, '//h2[contains(text(),\'Булки\')]')  # Раздел "Булки"
     SAUCES_BURGER_INGREDIENTS_SECTION = (By.XPATH, '//h2[contains(text(),\'Соусы\')]')  # Раздел "Соусы"
     FILLINGS_BURGER_INGREDIENTS_SECTION = (By.XPATH, '//h2[contains(text(),\'Начинки\')]')  # Раздел "Начинки"
-
