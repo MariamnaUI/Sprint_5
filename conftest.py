@@ -17,7 +17,7 @@ def driver():
 # Авторизация
 @pytest.fixture
 def login(driver):
-    email = 'mak2112@yandex.ru'
+    email = 'marianna_mogil_14_qa_python852@yandex.ru'
     password = '123654'
 
     driver.find_element(*LoginLocators.LOGIN_MAIN_BUTTON).click()
